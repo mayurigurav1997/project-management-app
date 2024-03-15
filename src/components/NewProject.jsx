@@ -3,7 +3,7 @@ import Input from './Input'
 
 const NewProject = () => {
     return (
-        <div>
+        <div className='w-[35rem]'>
             <menu>
                 <li><button>Cancel</button></li>
                 <li><button>Save</button></li>
