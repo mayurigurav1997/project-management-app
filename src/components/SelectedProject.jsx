@@ -1,4 +1,5 @@
 import React from 'react'
+import Tasks from './Tasks'
 
 const SelectedProject = ({ project, onDelete }) => {
     const formmatedDate = new Date(project.dueDate).toLocaleDateString('en-US', {
@@ -15,7 +16,7 @@ const SelectedProject = ({ project, onDelete }) => {
                 </div>
                 <p className='mb-4 text-stone-400'>{formmatedDate}</p>
                 <p className='text-stone-600 whitespace-pre-wrap'>{project.description}</p>
-
+                <Tasks />
             </header>
         </div>
     )
